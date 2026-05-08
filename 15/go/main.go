@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func findRotatedIndex(array []int, target int) int {
 	left, right := 0, len(array)-1
 
@@ -30,8 +26,4 @@ func findRotatedIndex(array []int, target int) int {
 	}
 
 	return -1
-}
-
-func main() {
-	fmt.Println(findRotatedIndex([]int{3, 4, 1, 2}, 4))
 }
